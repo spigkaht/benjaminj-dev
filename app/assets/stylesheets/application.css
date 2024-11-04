@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+/* Base styles */
+@import "base/reset";
+@import "base/typography";
+
+/* Layout styles */
+@import "layout/header";
+@import "layout/footer";
+@import "layout/grid";
+
+/* Component styles */
+@import "components/buttons";
+@import "components/cards";
+@import "components/forms";
+
+/* Page-specific styles */
+@import "pages/index";
