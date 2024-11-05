@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('/assets/code-640px.jpg');
+  background-image: asset-url("code-640px.jpg");
   background-repeat: repeat;
   background-size: contain;
   z-index: -1;

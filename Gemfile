@@ -46,6 +46,7 @@ gem "bootsnap", require: false
 
 gem "autoprefixer-rails"
 gem "simple_form", github: "heartcombo/simple_form"
+gem "sassc-rails"
 
 group :development, :test do
   gem "dotenv-rails"
