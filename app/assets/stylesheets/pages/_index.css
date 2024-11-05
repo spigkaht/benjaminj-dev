@@ -1,0 +1,89 @@
+.index-bg-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/assets/code-640px.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-header {
+  position: relative;
+}
+
+.index-image {
+  width: 100%;
+}
+
+.index-title {
+  color: white;
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+}
+
+.index-trans-div {
+  min-height: 200px;
+  height: 20%;
+  opacity: 0%;
+}
+
+.index-content {
+  background-color: #0F2338;
+  color: white;
+}
+
+.index-project-title {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0 0;
+}
+
+.index-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #19395c;
+  color: white;
+  padding: 2rem 0 0 0;
+  margin: 2rem 0;
+}
+
+.index-project-card {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  width: 100%;
+  padding: 2rem 0 0 0;
+}
+
+.index-img {
+  position: absolute;
+  transition: display 2s ease-in-out;
+  width: fit-content;
+  height: 700px;
+}
+
+.index-chevron-left, .index-chevron-right {
+  position: absolute;
+  top: 50%;
+  width: 1.5rem;
+  z-index: 50;
+}
+
+.index-chevron-left {
+  left: 1rem;
+}
+
+.index-chevron-right {
+  right: 1rem;
+}

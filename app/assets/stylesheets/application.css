@@ -30,3 +30,20 @@
 
 /* Page-specific styles */
 @import "pages/index";
+
+body {
+  background-color: #0F2338;
+  position: relative;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.block {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
