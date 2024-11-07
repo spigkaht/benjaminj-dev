@@ -11,9 +11,6 @@ export default class extends Controller {
   }
 
   updateHeight() {
-    console.log("updating height");
-    console.log("this element: ", this.element);
     this.element.style.height = `${document.body.scrollHeight}px`
-    console.log("this element height: ", this.element.style.height);
   }
 }

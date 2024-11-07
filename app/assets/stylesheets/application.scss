@@ -10,7 +10,6 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 
@@ -34,16 +33,25 @@
 body {
   background-color: #0F2338;
   position: relative;
+  color: #FDFFFC;
+}
+
+.container {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 .hidden {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
+  transform: rotate(0deg);
+  transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
 }
 
 .block {
   opacity: 1;
   visibility: visible;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
+  transform: rotate(90deg);
+  transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
 }

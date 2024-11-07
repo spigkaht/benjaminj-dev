@@ -11,7 +11,8 @@
     <%= hotwire_livereload_tags if Rails.env.development? %>
   </head>
 
-  <body class="logo">
+  <body>
+    <%= render "shared/header" %>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,17 @@
+<div class="header-menu" data-controller="menu">
+  <div class="header-images">
+    <%= image_tag "menu-open.png",
+      size: "35x35",
+      class: "header-menu-open",
+      data: { action: "click->menu#menuOpen", menu_target: "open" } %>
+    <%= image_tag "menu-close.png",
+      size: "35x35",
+      class: "header-menu-close hidden",
+      data: { action: "click->menu#menuClose", menu_target: "close" } %>
+    <%= link_to root_path do %>
+      <%= image_tag "menu-open.png",
+        size: "35x35",
+        class: "header-menu-home" %>
+    <% end %>
+  </div>
+</div>

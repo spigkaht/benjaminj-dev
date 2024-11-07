@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="parma-header">
+    <h1>Parmageddon</h1>
+    <h3>Brief</h3>
+    <p>A website designed to allow users to search for, view and rate venues across Australia, with the intention of rating the dish Chicken Parmigiana. Find your new favourite local parma and see what diners just like you rate it.</p>
+  </div>
+  <div class="parma-project-card" data-controller="card-shift">
+    <%= image_tag "chevron-left.svg",
+      class: "parma-chevron-left",
+      data: { action: "click->card-shift#leftShift" } %>
+    <%= image_tag "parmageddon-1.png",
+      class: "parma-img",
+      data: { card_shift_target: "image" } %>
+    <%= image_tag "parmageddon-2.png",
+      class: "parma-img",
+      data: { card_shift_target: "image" } %>
+    <%= image_tag "parmageddon-3.png",
+      class: "parma-img",
+      data: { card_shift_target: "image" } %>
+    <%= image_tag "chevron-right.svg",
+      class: "parma-chevron-right",
+      data: { action: "click->card-shift#rightShift" } %>
+  </div>
+  <div class="parma-content">
+    <div class="parma-deail">
+      <h4>...more detail</h4>
+      <p>Are you a serial parma orderer? Do you ever wonder where the best parma in your area is? My friends and I would rate the dish each pub outing we made. Some were average; some were horrible. Occasionally we'd stumble across an amazing offering. There exist a sizable quantity of rating services across social media, but the vast majority are voted on by the content creators. I found there was something missing - a site where the public could rate (that's you!) and then search and find a winning parma right near them. And Parmageddon was born!</p>
+      <p>This site was designed with a specific purpose in mind, and pulled together a lot of skills I've learned over the past year. Working with and parsing the Google APIs was a challenge but I was persistent and made it through with all the functionality I had planned complete. Parmageddon helped me broaden my Rails knowledge, allowed me to fully push a hosted site to the public, and gave me a foundation in SEO and the like.</p>
+    </div>
+    <div class="parma-tech">
+      <h4>Technologies used</h4>
+      <p>Ruby on Rails</p>
+      <p>JavaScript</p>
+      <p>Stimulus JS</p>
+      <p>Tailwind CSS</p>
+    </div>
+  </div>
+</div>

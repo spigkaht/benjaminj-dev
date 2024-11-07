@@ -1,0 +1,51 @@
+.parma-header, .parma-content {
+  margin: 2rem;
+}
+
+.parma-header h1 {
+  margin-bottom: 1.5rem;
+}
+
+.parma-header * {
+  margin-bottom: 0.25rem;
+}
+
+.parma-project-card {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  width: 100%;
+  background-color: #19395c;
+  padding: 3rem 0;
+}
+
+.parma-img {
+  position: absolute;
+  transition: display 2s ease-in-out;
+  width: fit-content;
+  height: 700px;
+}
+
+.parma-chevron-left, .parma-chevron-right {
+  position: absolute;
+  top: 50%;
+  width: 1.5rem;
+  z-index: 50;
+}
+
+.parma-chevron-left {
+  left: 1rem;
+}
+
+.parma-chevron-right {
+  right: 1rem;
+}
+
+.parma-content * {
+  margin-bottom: 0.25rem;
+}
+
+.parma-content > * {
+  margin-bottom: 1rem;
+}

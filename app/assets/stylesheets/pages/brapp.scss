@@ -1,0 +1,30 @@
+.brapp-project-card {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  width: 100%;
+  padding: 2rem 0 0 0;
+}
+
+.brapp-img {
+  position: absolute;
+  transition: display 2s ease-in-out;
+  width: fit-content;
+  height: 700px;
+}
+
+.brapp-chevron-left, .brapp-chevron-right {
+  position: absolute;
+  top: 50%;
+  width: 1.5rem;
+  z-index: 50;
+}
+
+.brapp-chevron-left {
+  left: 1rem;
+}
+
+.brapp-chevron-right {
+  right: 1rem;
+}
