@@ -11,8 +11,9 @@
     <%= hotwire_livereload_tags if Rails.env.development? %>
   </head>
 
-  <body>
+  <body data-controller="menu">
     <%= render "shared/header" %>
+    <%= render "shared/menu" %>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,13 @@
+.menu-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.menu-container a {
+  margin: 2rem 0;
+}

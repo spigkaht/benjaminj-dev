@@ -1,6 +1,4 @@
-<%# <div class="index-bg-fixed" data-controller="background">
-</div> %>
-<div class="container">
+<div class="container" data-menu-target="indexContainer">
   <div class="index-header">
     <%= image_tag "logo.png", class: "index-image" %>
     <div class="index-title">
@@ -8,11 +6,13 @@
       <p>Benjamin Jackson</p>
     </div>
   </div>
+  <div class="index-code">
+  </div>
   <div class="index-content">
     <div class="index-links">
-      <a>Projects</a>
-      <a>Contact</a>
-      <a>About</a>
+      <%= link_to "Home", root_path %>
+      <%= link_to "Projects", projects_path %>
+      <%= link_to "Contact", contact_path %>
     </div>
   </div>
 </div>

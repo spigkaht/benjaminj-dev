@@ -1,14 +1,4 @@
-// .index-bg-fixed {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100vw;
-//   height: 100vh;
-//   background-image: asset-url("code-640px.jpg");
-//   background-repeat: repeat;
-//   background-size: contain;
-//   z-index: -1;
-// }
+// SET FIRST MEDIA QUERY @ 500PX
 
 .index-header {
   position: relative;
@@ -24,11 +14,13 @@
   left: 40%;
 }
 
-// .index-trans-div {
-//   min-height: 80px;
-//   height: 20%;
-//   opacity: 0%;
-// }
+.index-code {
+  height: 8rem;
+  background-image: asset-url("code-640px.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .index-content {
   background-color: #0F2338;
@@ -39,30 +31,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
 
-// .index-project {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   background-color: #284153;
-//   padding: 2rem 0;
-//   margin: 2rem 0;
-// }
-
-// .index-project h3 {
-//   margin-bottom: 2rem;
-// }
-
-// .index-project-links {
-//   display: flex;
-//   justify-content: center;
-//   margin-top: 2rem;
-// }
-
-// .index-project-links a {
-//   margin: 0 2rem;
-// }
+.index-links a {
+  margin: 0.75rem 0;
+}

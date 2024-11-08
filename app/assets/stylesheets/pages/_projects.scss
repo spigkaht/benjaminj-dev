@@ -1,0 +1,56 @@
+.projects-bg-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: asset-url("code-640px.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.projects-title {
+  background-color: #0F2338;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+}
+
+.projects-project {
+  background-color: #0F2338;
+  padding: 2rem 0;
+}
+
+.projects-detail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #284153;
+  // padding: 2rem 0;
+}
+
+.projects-trans-div {
+  min-height: 60px;
+  height: 15%;
+  opacity: 0%;
+}
+
+.projects-project h3 {
+  margin: 2rem 0;
+}
+
+.projects-project-links {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.projects-project-links a {
+  margin: 0 2rem;
+}
