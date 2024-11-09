@@ -5,14 +5,15 @@
   z-index: 50;
   width: 85px;
   height: 35px;
+
+  img {
+    position: absolute;
+  }
 }
 
 .header-images {
   position: relative;
-}
-
-.header-menu img {
-  position: absolute;
+  height: 100%;
 }
 
 .header-menu-open, .header-menu-close {

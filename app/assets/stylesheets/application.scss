@@ -16,26 +16,32 @@
 /* Base styles */
 @import "base/reset";
 @import "base/typography";
+@import "base/colours";
 
 /* Layout styles */
 @import "layout/header";
 @import "layout/footer";
-@import "layout/grid";
-
-/* Component styles */
-@import "components/buttons";
-@import "components/cards";
-@import "components/forms";
 
 /* Page-specific styles */
 @import "pages/index";
 @import "pages/menu";
 @import "pages/projects";
+@import "pages/parmageddon";
+@import "pages/brapp";
 
 body {
-  background-color: #0F2338;
+  background-color: $darkblue;
   position: relative;
-  color: #FDFFFC;
+  color: $offwhite;
+  font-family: $main-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+}
+
+.main {
+  position: relative;
 }
 
 .container {
@@ -45,6 +51,7 @@ body {
 }
 
 .hidden {
+  display: flex;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;

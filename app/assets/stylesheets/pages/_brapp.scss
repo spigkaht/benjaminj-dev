@@ -1,10 +1,30 @@
+.brapp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brapp-header, .brapp-content {
+  margin: 1.5rem;
+
+  h1 {
+    margin-bottom: 1.5rem;
+    width: 70%;
+  }
+
+  * {
+    margin-bottom: 0.25rem;
+  }
+}
+
 .brapp-project-card {
   display: flex;
   justify-content: center;
   position: relative;
   height: 800px;
   width: 100%;
-  padding: 2rem 0 0 0;
+  background-color: $mediumblue;
+  padding: 3rem 0;
 }
 
 .brapp-img {
@@ -18,7 +38,7 @@
   position: absolute;
   top: 50%;
   width: 1.5rem;
-  z-index: 50;
+  z-index: 1;
 }
 
 .brapp-chevron-left {
@@ -27,4 +47,8 @@
 
 .brapp-chevron-right {
   right: 1rem;
+}
+
+.brapp-content > * {
+  margin-bottom: 1rem;
 }

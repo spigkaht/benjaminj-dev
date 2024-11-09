@@ -23,7 +23,7 @@
 }
 
 .index-content {
-  background-color: #0F2338;
+  background-color: $darkblue;
   height: 100%;
 }
 
@@ -34,8 +34,8 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
-}
 
-.index-links a {
-  margin: 0.75rem 0;
+  a {
+    margin: 0.75rem 0;
+  }
 }

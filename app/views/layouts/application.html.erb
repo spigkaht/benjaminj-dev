@@ -14,6 +14,8 @@
   <body data-controller="menu">
     <%= render "shared/header" %>
     <%= render "shared/menu" %>
-    <%= yield %>
+    <div class="main" data-menu-target="mainDiv">
+      <%= yield %>
+    </div>
   </body>
 </html>

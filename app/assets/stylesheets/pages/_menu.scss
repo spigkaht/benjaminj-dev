@@ -5,9 +5,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-}
+  position: fixed;
+  z-index: 2;
 
-.menu-container a {
-  margin: 2rem 0;
+  a {
+    margin: 2rem 0;
+  }
 }
