@@ -18,8 +18,18 @@
 
 .header-menu-open, .header-menu-close {
   right: 0;
+
+  &:hover {
+    scale: 130%;
+    transition: scale 0.3s ease;
+  }
 }
 
 .header-menu-home {
   left: 0;
+
+  &:hover {
+    scale: 130%;
+    transition: scale 0.3s ease-in-out;
+  }
 }

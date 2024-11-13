@@ -13,6 +13,9 @@
 
   <body data-controller="menu">
     <%= render "shared/header" %>
+    <% if flash[:notice] %>
+      <p data-controller="flash"><%= flash[:notice] %></p>
+    <% end %>
     <%= render "shared/menu" %>
     <div class="main" data-menu-target="mainDiv">
       <%= yield %>

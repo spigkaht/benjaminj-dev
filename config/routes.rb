@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/projects/parmageddon", to: "projects#parmageddon", as: "parmageddon"
   get "/projects/brapp", to: "projects#brapp", as: "brapp"
   get "contact", to: "pages#contact", as: "contact"
+  post "contact", to: "contacts#create"
 end

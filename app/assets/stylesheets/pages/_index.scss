@@ -36,6 +36,33 @@
   padding: 1rem 0;
 
   a {
-    margin: 0.75rem 0;
+    padding: 0.75rem;
+    text-decoration: none;
+
+    &:hover {
+      scale: 130%;
+      transition: scale 0.1s ease-in-out;
+    }
+  }
+
+  > *:first-child {
+    width: 50%;
+    border-top: 1px solid $offwhite;
+    border-bottom: 1px solid $offwhite;
+    text-align: center;
+  }
+
+  > *:last-child {
+    width: 50%;
+    border-top: 1px solid $offwhite;
+    border-bottom: 1px solid $offwhite;
+    text-align: center;
+  }
+
+  > *:not(:first-child):not(:last-child) {
+    width: 50%;
+    border-left: 1px solid $offwhite;
+    border-right: 1px solid $offwhite;
+    text-align: center;
   }
 }

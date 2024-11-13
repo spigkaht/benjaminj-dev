@@ -28,12 +28,18 @@
 @import "pages/projects";
 @import "pages/parmageddon";
 @import "pages/brapp";
+@import "pages/contact";
 
 body {
   background-color: $darkblue;
   position: relative;
   color: $offwhite;
   font-family: $main-font;
+
+  &> p {
+    color: $offwhite;
+    text-align: center;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

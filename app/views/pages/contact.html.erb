@@ -1,0 +1,31 @@
+<div class="contact-container">
+  <h1>Contact</h2>
+  <p>Got a question? Do you have a job you think I might be a good fit for? Or anything else you think might help me on my journey?</p>
+  <p>Contact me through the form or any of the socials links below.</p>
+  <%= form_with url: contact_path, method: :post, local: true do |form| %>
+    <div>
+      <%= form.label :name, "Your name" %>
+      <%= form.text_field :name, placeholder: "Foo Bar", required: true %>
+    </div>
+    <div>
+      <%= form.label :email, "Your email" %>
+      <%= form.email_field :email, placeholder: "email@example.com", required: true %>
+    </div>
+    <div>
+      <%= form.label :message, "Your message" %>
+      <%= form.text_area :message, size: "35x3", placeholder: "Leave a comment...", required: true %>
+    </div>
+    <%= button_tag "Send message", type: "submit", class: "contact-form-btn" %>
+  <% end %>
+</div>
+<div class="contact-socials">
+  <%= link_to "https://www.linkedin.com/in/benjamin-jackson-dev/" do %>
+    <%= image_tag "linkedin-logo.png", size: "40x40" %>
+  <% end %>
+  <%= link_to "https://github.com/spigkaht" do %>
+    <%= image_tag "github-logo.png", size: "40x40" %>
+  <% end %>
+  <%= link_to "https://www.facebook.com/spigkaht" do %>
+    <%= image_tag "facebook-logo.png", size: "40x40" %>
+  <% end %>
+</div>
